@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link data-require="fontawesome@*" data-semver="4.1.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    
+    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+    <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+ </head>
+  
+ <body>
+   
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-brand" ui-sref="home"><b><i>Vipin Kumar Dixit</i></b></div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a ui-sref="home">Home</a>
+        </li>
+        <li>
+          <a ui-sref="about">About me</a>
+        </li>
+        <li>
+            <a ui-sref="resume" type="application/pdf">Resume</a>
+        </li>
+        <li>
+          <a ui-sref="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+       
+      <div ui-view></div>
+    </div>
+     
+  </body>
+</html>
